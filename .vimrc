@@ -30,14 +30,14 @@ set textwidth=0
 set wrapmargin=0
 
 " tab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
-set softtabstop=4
+set softtabstop=2
 
 " syntax specific indentation
-autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType haml setlocal shiftwidth=2 tabstop=2 softtabstop=2
+"autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 softtabstop=2
+"autocmd FileType haml setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 " swap, backup, etc
 set noswapfile
