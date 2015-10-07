@@ -9,7 +9,7 @@ set bs=2
 set backspace=indent,eol,start
 
 " display
-colorscheme SpacegrayEighties
+colorscheme solarized
 set background=dark
 set nu
 set nocompatible
@@ -36,8 +36,10 @@ set expandtab
 set softtabstop=2
 
 " syntax specific indentation
-"autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 softtabstop=2
-"autocmd FileType haml setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType rust setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType haml setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType asm setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType make setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4
 
 " swap, backup, etc
 set noswapfile
@@ -50,8 +52,6 @@ let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#tab_nr_type=1
 let g:airline#extensions#tabline#show_tab_nr=1
-" theme
-let g:airline_theme='bubblegum'
 " straight tabs
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
