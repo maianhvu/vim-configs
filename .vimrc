@@ -9,7 +9,7 @@ set bs=2
 set backspace=indent,eol,start
 
 " display
-colorscheme solarized
+"colorscheme solarized
 set background=dark
 set nu
 set nocompatible
@@ -53,6 +53,7 @@ let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#tab_nr_type=1
 let g:airline#extensions#tabline#show_tab_nr=1
+let g:airline_theme='sol'
 " straight tabs
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
