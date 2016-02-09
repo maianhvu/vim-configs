@@ -2,15 +2,17 @@ execute pathogen#infect()
 
 " syntax
 filetype plugin indent on
-syntax enable
+syntax on
 
 " better backspace
 set bs=2
 set backspace=indent,eol,start
 
 " display
-colorscheme solarized
 set background=dark
+let g:solarized_termtrans=1
+let g:solarized_contrast="high"
+colorscheme solarized
 set nu
 set nocompatible
 set autoindent
@@ -39,6 +41,7 @@ set softtabstop=2
 autocmd FileType rust setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType haml setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType java setlocal shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType sass setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType asm setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType make setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4
 
@@ -53,6 +56,7 @@ let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#tab_nr_type=1
 let g:airline#extensions#tabline#show_tab_nr=1
+let g:airline_theme='solarized'
 " straight tabs
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -80,3 +84,13 @@ map <Leader>a :call RunAllSpecs()<CR>
 " plugin: vim-better-whitespace
 highlight ExtraWhitespace ctermbg=10
 autocmd BufWritePre * StripWhitespace
+
+" plugin: Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
