@@ -76,10 +76,10 @@ autocmd FileType sass :let g:indent_guides_guide_size=2
 " plugin: vim-rspec
 let g:rspec_command = "!clear && zeus rspec {spec}"
 let g:rspec_runner = "os_x_iterm"
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
+autocmd FileType ruby map <Leader>t :call RunCurrentSpecFile()<CR>
+autocmd FileType ruby map <Leader>s :call RunNearestSpec()<CR>
+autocmd FileType ruby map <Leader>l :call RunLastSpec()<CR>
+autocmd FileType ruby map <Leader>a :call RunAllSpecs()<CR>
 
 " plugin: vim-better-whitespace
 highlight ExtraWhitespace ctermbg=10
