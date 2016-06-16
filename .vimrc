@@ -104,3 +104,11 @@ let g:limelight_conceal_ctermfg = 240
 
 " plugin: The NERD Commenter
 let NERDSpaceDelims=1
+
+" plugin: NEOCOMPLETE
+let g:neocomplete#enable_at_startup = 1
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" plugin: Tagbar
+nmap <F8> :TagbarToggle<CR>
