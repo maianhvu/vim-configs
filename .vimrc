@@ -10,9 +10,7 @@ set backspace=indent,eol,start
 
 " display
 set background=dark
-let g:solarized_termtrans=1
-let g:solarized_contrast="high"
-colorscheme solarized
+colorscheme solarized8_dark_high
 set nu
 set nocompatible
 set autoindent
