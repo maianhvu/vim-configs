@@ -97,6 +97,3 @@
 [submodule ".vim/bundle/vim-javascript-syntax"]
 	path = .vim/bundle/vim-javascript-syntax
 	url = https://github.com/jelera/vim-javascript-syntax
-[submodule ".vim/bundle/vim-numbertoggle"]
-	path = .vim/bundle/vim-numbertoggle
-	url = git://github.com/jeffkreeftmeijer/vim-numbertoggle.git
