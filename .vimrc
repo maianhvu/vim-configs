@@ -11,7 +11,7 @@ set backspace=indent,eol,start
 " display
 set background=dark
 colorscheme solarized8_dark_high
-set nu
+set relativenumber
 set nocompatible
 set autoindent
 set smartindent
@@ -109,4 +109,4 @@ let g:neocomplete#enable_at_startup = 1
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " plugin: Tagbar
-nmap <F8> :TagbarToggle<CR>
+nmap <C-g> :TagbarToggle<CR>
