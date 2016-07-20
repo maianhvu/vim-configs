@@ -40,9 +40,6 @@
 [submodule ".vim/bundle/vim-es6"]
 	path = .vim/bundle/vim-es6
 	url = https://github.com/isRuslan/vim-es6.git
-[submodule ".vim/bundle/rust.vim"]
-	path = .vim/bundle/rust.vim
-	url = https://github.com/wting/rust.vim.git
 [submodule ".vim/bundle/vim-scala"]
 	path = .vim/bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala
