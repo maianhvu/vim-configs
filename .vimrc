@@ -110,3 +110,7 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " plugin: Tagbar
 nmap <C-g> :TagbarToggle<CR>
+
+" plugin: vim-racer
+set hidden
+let g:racer_cmd=$HOME."/.cargo/bin/racer"
