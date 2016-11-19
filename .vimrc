@@ -10,7 +10,7 @@ set backspace=indent,eol,start
 
 " display
 set background=dark
-colorscheme solarized8_dark_high
+colorscheme solarized8_dark
 set relativenumber
 set nocompatible
 set autoindent
@@ -38,6 +38,7 @@ set softtabstop=2
 " syntax specific indentation
 autocmd FileType rust setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType haml setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType java setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType sass setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType asm setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4
